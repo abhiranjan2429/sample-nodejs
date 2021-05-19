@@ -1,0 +1,6 @@
+{
+    "entryPoints": ["./src/app.ts"],
+    "out": "docs",
+    "exclude" : "**/*+(index|.spec|.e2e).ts",
+    "externalPattern": "lib/**/*.ts"
+  }
