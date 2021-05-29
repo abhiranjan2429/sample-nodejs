@@ -1,5 +1,6 @@
 import express from 'express';
  const app = express();
+// import {config} from './config/config'
 
  app.use(express.json());
 
@@ -13,7 +14,7 @@ app.use((req, res, next)=> {
     next();
 })
 // routes
-app.get('/',(req,res)=>{
+app.get('/',async (req,res)=>{
     res.status(200).type('html');
     res.send(`<h1>Welcome to node app</h1>`)
 
